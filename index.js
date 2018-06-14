@@ -1,12 +1,13 @@
 var katzDeliLine = [];
 var katzDeli = [];
 var otherDeli = [];
+var ticket = 0;
 
-function takeANumber (deli, name){
-  deli.push(name)
-  katzDeliLine.push(katzDeli)
-  var length = deli.length
-  return 'Welcome, ' + deli[(length - 1)] + '. You are number ' + length + ' in line.'
+function takeANumber (katzDeliLine, ticket){
+  katzDeliLine.push(ticket += 1)
+
+  var length = katzDeliLine.length
+  return 'Welcome, ' + katzDeliLine[(length - 1)] + '. You are number ' + length + ' in line.'
 }
 
 function nowServing(deli){
