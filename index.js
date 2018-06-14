@@ -6,8 +6,7 @@ var ticket = 0;
 function takeANumber (katzDeliLine, ticket){
   katzDeliLine.push(ticket += 1)
 
-  var length = katzDeliLine.length
-  return 'Welcome, ' + katzDeliLine[(length - 1)] + '. You are number ' + length + ' in line.'
+  return 'You are number ' + ticket + '.'
 }
 
 function nowServing(deli){
